@@ -1,4 +1,4 @@
-# 🎁 advent of code 2019 🎁
+# 🎁 advent of code 2020 🎁
 
 ## Project setup 🎅
 
@@ -22,5 +22,5 @@ For example, if I wanted to run day 4 part 2, I would run `npm start 4.5`
     - [x] Part 2
 - [x] Day 2
     - [x] Part 2
-- [ ] Day 3
-    - [ ] Part 2
+- [x] Day 3
+    - [x] Part 2
