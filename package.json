@@ -1,0 +1,10 @@
+{
+  "name": "advent-of-code-2018",
+  "version": "9000.0.1",
+  "dependencies": {
+    "esm": "^3.2.25"
+  },
+  "scripts": {
+    "start": "node -r esm $1"
+  }
+}
