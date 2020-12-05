@@ -1,4 +1,14 @@
-import data from './data'
+import data from '../data/1'
+
+const getTotal = (depth, index) => {
+    if (!depth) {
+        return data[index]
+    }
+
+    if (data[index + 1]) {
+        return getTotal(depth - 1, index + 1)
+    }
+}
 
 console.log('Day 1 output:')
 
@@ -21,13 +31,3 @@ while (!result && data[index1]) {
 console.log(result)
 
 getTotal(2, 0)
-
-const getTotal = (depth, index) => {
-    if (!depth) {
-        return data[index]
-    }
-
-    if (data[index + 1]) {
-        return getTotal(depth - 1, index + 1)
-    }
-}

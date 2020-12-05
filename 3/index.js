@@ -1,4 +1,4 @@
-import data from './data'
+import data from '../data/3'
 
 console.log('Day 3 output:')
 

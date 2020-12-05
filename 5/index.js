@@ -1,4 +1,4 @@
-import data from './data'
+import data from '../data/5'
 
 const ids = data.map(pass => {
     const row = parseInt(pass.replace(/L|R/g, '').replace(/B/g, 1).replace(/F/g, 0), 2)

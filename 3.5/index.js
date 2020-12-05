@@ -1,6 +1,6 @@
-import data from './data'
+import data from '../data/3'
 
-console.log('Day 3 output:')
+console.log('Day 3 part 2 output:')
 
 const getSlope = (right, down) => {
     let result = 0

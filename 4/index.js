@@ -1,4 +1,4 @@
-import data from './data'
+import data from '../data/4'
 
 const passports = data.split('\n\n').map(passport => passport.replace('\n', ' '))
 
