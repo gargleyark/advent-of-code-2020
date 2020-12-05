@@ -1,24 +1,8 @@
 import data from './data'
 
 const ids = data.map(pass => {
-    let rowTotal = 128
-    let row = 0
-    let columnTotal = 8
-    let column = 0
-    pass.match(/^......./)[0].split('').map(a => {
-        if (a === 'B') {
-            row = row + rowTotal / 2
-        }
-        rowTotal = rowTotal / 2
-    })
-
-    pass.match(/...$/)[0].split('').map(a => {
-   
-        if (a === 'R') {
-           column = column + columnTotal / 2
-        }
-        columnTotal = columnTotal / 2
-     })
+    const row = parseInt(pass.replace(/L|R/g, '').replace(/B/g, 1).replace(/F/g, 0), 2)
+    const column = parseInt(pass.replace(/B|F/g, '').replace(/R/g, 1).replace(/L/g, 0), 2)
 
     return (row * 8) + column
 }).sort(function(a, b) {

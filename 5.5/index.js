@@ -3,24 +3,8 @@ import data from './data'
 const missingIds = []
 
 data.map(pass => {
-    let rowTotal = 128
-    let row = 0
-    let columnTotal = 8
-    let column = 0
-    pass.split('').forEach(a => {
-        if (a === 'B') {
-            row = row + rowTotal / 2
-        }
-        rowTotal = rowTotal / 2
-
-        if (a === 'R') {
-            column = column + columnTotal / 2
-        }
-
-        if (a.match(/R|L/)) {
-            columnTotal = columnTotal / 2
-        }
-    })
+    const row = parseInt(pass.replace(/L|R/g, '').replace(/B/g, 1).replace(/F/g, 0), 2)
+    const column = parseInt(pass.replace(/B|F/g, '').replace(/R/g, 1).replace(/L/g, 0), 2)
 
     return (row * 8) + column
 }).sort(function(a, b) {
