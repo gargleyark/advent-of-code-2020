@@ -22,4 +22,4 @@ while (types.length) {
     types = types.flat()
 }
 
-console.log(requiredBags.flat().reduce((acc, curr) => acc + parseInt(curr), 0))
+console.log(requiredBags.flat().reduce((acc, curr) => acc + curr, 0))
