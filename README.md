@@ -30,3 +30,9 @@ For example, if I wanted to run day 4 part 2, I would run `npm start 4.5`
     - [x] Part 2
 - [x] Day 6
     - [x] Part 2
+- [x] Day 7
+    - [x] Part 2
+- [x] Day 8
+    - [x] Part 2
+- [x] Day 9
+    - [x] Part 2
